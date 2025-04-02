@@ -55,7 +55,11 @@ namespace Lab9Startup.Services
         /// <param name="book"></param>
         public void AddBook(Book book)
         {
-            throw new NotImplementedException();
+            connection.Open();
+            string insertsql = $"Insert into books (BookId, Title, Author, Description, Category) values ('{book.BookId}', '{book.Title}', '{book.Author}', '{book.Description}', '{book.Category}')";
+            MySqlCommand insertCommand = new MySqlCommand(insertsql, connection);
+            int rowsAffected = insertCommand.ExecuteNonQuery();
+            connection.Close() ;
         }
 
         /// <summary>
