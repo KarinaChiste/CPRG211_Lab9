@@ -21,7 +21,7 @@ namespace Lab9Startup.Components.Pages
         {
             // Get the book from the database using the BookId
             // Uncomment once the GetBook method is implemented in the BookDbAccessor class
-            // book = bookDbAccessor.GetBook(BookId);
+             book = bookDbAccessor.GetBook(BookId);
         }
 
         private void EditBook(Book book)
@@ -34,7 +34,7 @@ namespace Lab9Startup.Components.Pages
         {
             // Delete the book from the database
             // Uncomment once the DeleteBook method is implemented in the BookDbAccessor class
-            // bookDbAccessor.DeleteBook(book.BookId);
+             bookDbAccessor.DeleteBook(book.BookId);
 
             NavigationManager.NavigateTo("/");
         }

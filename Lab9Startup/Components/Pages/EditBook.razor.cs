@@ -22,14 +22,14 @@ namespace Lab9Startup.Components.Pages
         {
             // Get the book from the database using the BookId
             // Uncomment once the GetBook method is implemented in the BookDbAccessor class
-            // book = bookDbAccessor.GetBook(BookId);
+             book = bookDbAccessor.GetBook(BookId);
         }
 
         private async Task UpdateBook()
         {
             // Update the book in the database
             // Uncomment once the UpdateBook method is implemented in the BookDbAccessor class
-            // bookDbAccessor.UpdateBook(book);
+             bookDbAccessor.UpdateBook(book);
 
             // Navigate back to the Home page
             isSaved = true;
